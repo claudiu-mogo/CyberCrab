@@ -24,46 +24,6 @@ export default async function Home() {
   return (
     <>
       <div className="z-10 w-full max-w-xl px-5 xl:px-0">
-        <div className="mt-4 flex flex-col flex-grow items-center justify-center p-4">
-          <video
-            className="absolute left-0 top-0 h-screen w-full object-cover"
-            autoPlay
-            loop
-            muted
-            playsInline
-          >
-            <source src="video.mp4" type="video/mp4" />
-          </video>
-          <h5
-            className="text-{128px} animate-fade-up bg-[conic-gradient(var(--tw-gradient-stops))] from-sky-950  to-white bg-clip-text text-center font-display font-extrabold tracking-[-0.02em] text-transparent opacity-0 drop-shadow-sm [text-wrap:balance] md:text-7xl md:leading-[5rem]"
-            style={{ animationDelay: "0.15s", animationFillMode: "forwards" }}
-          >
-            CyberCrab
-          </h5>
-          <p
-            className="mt-6 block animate-fade-up text-center text-gray-500 opacity-0 [text-wrap:balance] md:text-xl"
-            style={{ animationDelay: "0.25s", animationFillMode: "forwards" }}
-          >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-          </p>
-        <div
-          className="mx-auto mt-6 flex animate-fade-up items-center justify-center space-x-5 opacity-0"
-          style={{ animationDelay: "0.3s", animationFillMode: "forwards" }}
-        >
-          <button
-            className="group flex max-w-fit items-center justify-center space-x-2 rounded-full border border-black bg-sky-950 px-5 py-2 text-sm text-white transition-colors hover:bg-white hover:text-sky-950"
-            rel="noopener noreferrer"
-          >
-            <p>Login</p>
-          </button>
-          <button
-            className="flex max-w-fit max-h-fit items-center justify-center space-x-2 rounded-full border border-black bg-white px-5 py-2 text-sm text-black shadow-md transition-colors hover:text-white hover:bg-sky-950"
-            rel="noopener noreferrer"
-          >
-            <p>Register</p>
-            </button>
-            </div>
-        </div>
       </div>
       <div className="my-10 grid w-full max-w-screen-xl animate-fade-up grid-cols-1 gap-5 px-5 md:grid-cols-3 xl:px-0">
         {features.map(({ title, description, demo, large }) => (
