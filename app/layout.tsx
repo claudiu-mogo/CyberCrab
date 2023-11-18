@@ -28,7 +28,7 @@ export default async function RootLayout({
         <link rel="icon" href="/logo.png" sizes="any" />
       </head>
       <body className={cx(sfPro.variable, inter.variable)}>
-        <div className="fixed h-screen w-full bg-gradient-to-br from-indigo-50 via-white to-cyan-100" />
+        <div className="fixed h-screen w-full bg-gradient-to-br from-black via-blue-300 to-black" />
         <Suspense fallback="...">
           <Nav />
           <Hero />

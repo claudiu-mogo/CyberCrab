@@ -48,11 +48,81 @@ export default async function Home() {
   );
 }
 
+
+let xp = 100
+const isSpecial = xp > 10;
 const features = [
   {
-    title: "Beautiful, reusable components",
-    description:
-      "Pre-built beautiful, a11y-first components, powered by [Tailwind CSS](https://tailwindcss.com/), [Radix UI](https://www.radix-ui.com/), and [Framer Motion](https://framer.com/motion)",
+
+    title: " ",
+    description: "BattlePass",
+    demo: (
+      <div className="overflow-x-auto">
+        <div className="grid grid-flow-col grid-rows-2 gap-5 p-5 whitespace-nowrap">
+          <div className={isSpecial ? "square_pass_unlocked" : "square_pass_locked"}>
+            <img
+              src="claw.png"
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className={isSpecial ? "square_pass_unlocked" : "square_pass_locked"}>
+            <img
+              src="crab_mic.png"
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className={isSpecial ? "square_pass_unlocked" : "square_pass_locked"}>
+            <span className="font-mono font-bold" style={{ textShadow: "0 0 5px #fff, 0 0 10px #00f, 0 0 20px #00f" }}>
+            Baby Crab</span>
+          </div>
+          <div className="square_pass_unlocked">
+            <span className="font-mono font-bold" style={{ textShadow: "0 0 5px #ffd700, 0 0 10px #ffd700, 0 0 20px #ffd700" }}>
+            Learner Crab</span>
+          </div>
+          <div className="square_pass_unlocked">
+            <img
+              src="sticker1.png"
+              style={{ width: '100px', height: '75px' }}
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="square_pass_unlocked">
+            <img
+              src="sticker2.png"
+              style={{ width: '100px', height: '75px' }}
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="square_pass_locked">
+            <span className="font-mono font-semibold">Intermediate Lvl</span>
+          </div>
+          <div className="square_pass_locked">
+            <span className="font-mono font-semibold">Hard Lvl</span>
+          </div>
+          <div className="square_pass_locked">
+            <img
+              src="RL.png"
+              style={{ width: '100px', height: '75px' }}
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="square_pass_locked">
+            <img
+              src="SO.png"
+              style={{ width: '100px', height: '75px' }}
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="square_pass_locked">
+            <span className="font-mono font-semibold">Hard Lvl</span>
+          </div>
+          <div className="square_pass_locked">
+            <span className="font-mono font-semibold">50% Next Season</span>
+          </div>
+          
+        </div>
+      </div>
+    ),
     large: true,
   },
   {
@@ -101,17 +171,46 @@ const features = [
   ),
   },
   {
-    title: "Hooks, utilities, and more",
-    description:
-      "Precedent offers a collection of hooks, utilities, and `@vercel/og`",
+    title: " ",
+    description: "BattlePass",
     demo: (
-      <div className="grid grid-flow-col grid-rows-3 gap-10 p-10">
-        <span className="font-mono font-semibold">useIntersectionObserver</span>
-        <span className="font-mono font-semibold">useLocalStorage</span>
-        <span className="font-mono font-semibold">useScroll</span>
-        <span className="font-mono font-semibold">nFormatter</span>
-        <span className="font-mono font-semibold">capitalize</span>
-        <span className="font-mono font-semibold">truncate</span>
+      <div className="overflow-x-auto">
+        <div className="grid grid-flow-col grid-rows-2 gap-5 p-5 whitespace-nowrap">
+          <div className="square_pass_unlocked">
+            <span className="font-mono font-semibold">useIntersectionObserver</span>
+          </div>
+          <div className="square_pass_unlocked">
+            <img
+              src="crab_mic.png"
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="square_pass_unlocked">
+            <span className="font-mono font-semibold">useScroll</span>
+          </div>
+          <div className="square_pass_unlocked">
+            <span className="font-mono font-semibold">nFormatter</span>
+          </div>
+          <div className="square_pass_unlocked">
+            <span className="font-mono font-semibold">capitalize</span>
+          </div>
+          <div className="square_pass_unlocked">
+            <span className="font-mono font-semibold">truncate</span>
+          </div>
+          <div className="square_pass_locked">
+            <span className="font-mono font-semibold">useScroll</span>
+          </div>
+          <div className="square_pass_locked">
+            <span className="font-mono font-semibold">nFormatter</span>
+          </div>
+          <div className="square_pass_locked">
+            <span className="font-mono font-semibold">capitalize</span>
+          </div>
+          <div className="square_pass_locked">
+            <span className="font-mono font-semibold">truncate</span>
+          </div>
+          
+        </div>
       </div>
     ),
   },
