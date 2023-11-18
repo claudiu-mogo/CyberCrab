@@ -17,27 +17,26 @@ export default function NavBar({ session }: { session: Session | null }) {
       <div
         className={`fixed top-0 w-full flex justify-center ${
           scrolled
-            ? "border-b border-gray-200 bg-white/50 backdrop-blur-xl"
-            : "bg-white/0"
+            ? "border-b border-gray-200 bg-sky-950 backdrop-blur-xl"
+            : "bg-sky-950"
         } z-30 transition-all`}
       >
         <div className="mx-5 flex h-16 max-w-screen-xl items-center justify-between w-full">
           <Link href="/" className="flex items-center font-display text-2xl">
             <Image
-              src="/logo.png"
+              src="/icon.png"
               alt="Precedent logo"
-              width="30"
-              height="30"
+              width= {200}
+              height = {150}
               className="mr-2 rounded-sm"
             ></Image>
-            <p>Precedent</p>
           </Link>
           <div>
             {session ? (
               <UserDropdown session={session} />
             ) : (
               <button
-                className="rounded-full border border-black bg-black p-1.5 px-4 text-sm text-white transition-all hover:bg-white hover:text-black"
+                className="nav-link cursor-pointer font-semibold text-white hover:bg-white hover:text-black rounded-lg hover:scale-105 transition-all duration-300 text-xl p-2"
                 onClick={() => setShowSignInModal(true)}
               >
                 Sign In
