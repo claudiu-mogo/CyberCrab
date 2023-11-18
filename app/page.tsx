@@ -5,6 +5,7 @@ import WebVitals from "@/components/home/web-vitals";
 import ComponentGrid from "@/components/home/component-grid";
 import Image from "next/image";
 
+
 export default async function Home() {
   const { stargazers_count: stars } = await fetch(
     "https://api.github.com/repos/steven-tey/precedent",
@@ -76,15 +77,27 @@ const features = [
     ),
   },
   {
-    title: "Built-in Auth + Database",
+    title: "Our CTF challenges",
     description:
-      "Precedent comes with authentication and database via [Auth.js](https://authjs.dev/) + [Prisma](https://prisma.io/)",
+      "Here are our 4 ctf challenges:",
     demo: (
-      <div className="flex items-center justify-center space-x-20">
-        <Image alt="Auth.js logo" src="/authjs.webp" width={50} height={50} />
-        <Image alt="Prisma logo" src="/prisma.svg" width={50} height={50} />
+      <div>
+        <div className="grid grid-flow-col grid-rows-2 gap-10 p-10">
+          <button className="square-container">
+            <span className="font-mono font-semibold">exer 1</span>
+          </button>
+          <button className="square-container">
+            <span className="font-mono font-semibold">exer 2</span>
+          </button>
+          <button className="square-container">
+            <span className="font-mono font-semibold">exer 3</span>
+          </button>
+          <button className="square-container">
+            <span className="font-mono font-semibold">exer 4</span>
+          </button>
+        </div>
       </div>
-    ),
+  ),
   },
   {
     title: "Hooks, utilities, and more",
