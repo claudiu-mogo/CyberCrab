@@ -4,7 +4,7 @@ import { Github, Twitter } from "@/components/shared/icons";
 import WebVitals from "@/components/home/web-vitals";
 import ComponentGrid from "@/components/home/component-grid";
 import Image from "next/image";
-import React, { useState } from 'react';
+import Link from "next/link";
 
 
 export default async function Home() {
@@ -154,18 +154,18 @@ const features = [
     demo: (
       <div>
         <div className="grid grid-flow-col grid-rows-2 gap-10 p-10">
-          <button className="square-container">
+          <Link href="/exercise-1" className="square-container">
             <span className="font-mono font-semibold">exer 1</span>
-          </button>
-          <button className="square-container">
+          </Link>
+          <Link href="/exercise-2" className="square-container">
             <span className="font-mono font-semibold">exer 2</span>
-          </button>
-          <button className="square-container">
+          </Link>
+          <Link href="/exercise-3" className="square-container">
             <span className="font-mono font-semibold">exer 3</span>
-          </button>
-          <button className="square-container">
+          </Link>
+          <Link href="/exercise-4" className="square-container">
             <span className="font-mono font-semibold">exer 4</span>
-          </button>
+          </Link>
         </div>
       </div>
   ),
