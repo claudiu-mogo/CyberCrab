@@ -109,7 +109,7 @@ const features = [
           <div className="square_pass_locked">
             <img
               src="SO.png"
-              style={{ width: '100px', height: '75px' }}
+              style={{ width: '80px', height: '70px' }}
               className="w-full h-full object-cover"
             />
           </div>
@@ -126,22 +126,22 @@ const features = [
     large: true,
   },
   {
-    title: "Performance first",
+    title: "Experience Points",
     description:
-      "Built on [Next.js](https://nextjs.org/) primitives like `@next/font` and `next/image` for stellar performance.",
+      "",
     demo: <WebVitals />,
   },
   {
-    title: "One-click Deploy",
+    title: "Virtual Machines provider",
     description:
-      "Jumpstart your next project by deploying Precedent to [Vercel](https://vercel.com/) in one click.",
+      "We are proud to announce that for cloud services we use OVH hosting, one of the best solutions for small companies.",
     demo: (
       <a href={DEPLOY_URL}>
         <Image
-          src="https://vercel.com/button"
-          alt="Deploy with Vercel"
-          width={120}
-          height={30}
+          src="Logo-ovh.png"
+          alt="VM provider - OVH"
+          width={160}
+          height={80}
           unoptimized
         />
       </a>
@@ -171,45 +171,15 @@ const features = [
   ),
   },
   {
-    title: " ",
-    description: "BattlePass",
+    title: "How we differentiate",
+    description: "*crab clinking noise*",
     demo: (
       <div className="overflow-x-auto">
-        <div className="grid grid-flow-col grid-rows-2 gap-5 p-5 whitespace-nowrap">
-          <div className="square_pass_unlocked">
-            <span className="font-mono font-semibold">useIntersectionObserver</span>
-          </div>
-          <div className="square_pass_unlocked">
-            <img
-              src="crab_mic.png"
-              className="w-full h-full object-cover"
-            />
-          </div>
-          <div className="square_pass_unlocked">
-            <span className="font-mono font-semibold">useScroll</span>
-          </div>
-          <div className="square_pass_unlocked">
-            <span className="font-mono font-semibold">nFormatter</span>
-          </div>
-          <div className="square_pass_unlocked">
-            <span className="font-mono font-semibold">capitalize</span>
-          </div>
-          <div className="square_pass_unlocked">
-            <span className="font-mono font-semibold">truncate</span>
-          </div>
-          <div className="square_pass_locked">
-            <span className="font-mono font-semibold">useScroll</span>
-          </div>
-          <div className="square_pass_locked">
-            <span className="font-mono font-semibold">nFormatter</span>
-          </div>
-          <div className="square_pass_locked">
-            <span className="font-mono font-semibold">capitalize</span>
-          </div>
-          <div className="square_pass_locked">
-            <span className="font-mono font-semibold">truncate</span>
-          </div>
-          
+        <div className="grid grid-flow-line grid-cols-1 gap-5 p-5 whitespace-nowrap flex justify-center">
+          <span className="font-mono font-semibold">- Real-Life Scenarios</span>
+          <span className="font-mono font-semibold">- Discussions Forums</span>
+          <span className="font-mono font-semibold">- Detailed Write-ups & Guides</span>
+          <span className="font-mono font-semibold">- Battle Pass with Crabs</span>
         </div>
       </div>
     ),
