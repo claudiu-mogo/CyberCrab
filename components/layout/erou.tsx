@@ -5,12 +5,16 @@ import { Session } from "next-auth";
 import UserDropdown from "./user-dropdown";
 import { useSignInModal } from "./sign-in-modal";
 import { useRegisterModal } from './register-in-modal';
+import { usePathname } from 'next/navigation'
 
 
 export default function Erou({ session }: { session: Session | null }) {
     const { SignInModal, setShowSignInModal } = useSignInModal();
     const { RegisterModal, setRegisterModal } = useRegisterModal();
-
+    const path = usePathname();
+    if (path !== '/') {
+      return null; // Render nothing if not on the root page
+    }
   return (
     <>
     <SignInModal/>
@@ -26,7 +30,7 @@ export default function Erou({ session }: { session: Session | null }) {
             <source src="video.mp4" type="video/mp4" />
           </video>
           <h5
-            className="text-{128px} animate-fade-up bg-[conic-gradient(var(--tw-gradient-stops))] from-sky-950  to-white bg-clip-text text-center font-display font-extrabold tracking-[-0.02em] text-transparent opacity-0 drop-shadow-sm [text-wrap:balance] md:text-7xl md:leading-[5rem]"
+            className="text-{128px} border-white  animate-fade-up bg-[conic-gradient(var(--tw-gradient-stops))] from-sky-950  to-white bg-clip-text text-center font-display font-extrabold tracking-[-0.02em] text-transparent opacity-0 drop-shadow-xl [text-wrap:balance] md:text-7xl md:leading-[5rem]"
             style={{ animationDelay: "0.15s", animationFillMode: "forwards" }}
           >
             CyberCrab
