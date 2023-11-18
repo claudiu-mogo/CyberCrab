@@ -2,8 +2,10 @@
 
 import { motion } from "framer-motion";
 import CountingNumbers from "@/components/shared/counting-numbers";
+import React, { useState } from 'react';
 
 export default function WebVitals() {
+  const [value, setValue] = useState(5);
   return (
     <div className="relative h-full w-full">
       <motion.svg
