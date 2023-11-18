@@ -27,7 +27,7 @@ export default async function Home() {
       <div className="z-10 w-full max-w-xl px-5 xl:px-0">
         <div className="mt-4 flex flex-col flex-grow items-center justify-center p-4">
           <video
-            className="absolute left-0 top-0 h-0 w-full object-cover"
+            className="absolute left-0 top-0 h-screen w-full object-cover"
             autoPlay
             loop
             muted
