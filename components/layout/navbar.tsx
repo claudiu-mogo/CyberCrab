@@ -36,7 +36,7 @@ export default function NavBar({ session }: { session: Session | null }) {
               <UserDropdown session={session} />
             ) : (
               <button
-                className="nav-link cursor-pointer font-semibold text-white hover:bg-white hover:text-black rounded-lg hover:scale-105 transition-all duration-300 text-xl p-2"
+                className="nav-link cursor-pointer font-semibold text-white hover:bg-white hover:text-sky-950 rounded-lg hover:scale-105 transition-all duration-300 text-xl p-2"
                 onClick={() => setShowSignInModal(true)}
               >
                 Sign In

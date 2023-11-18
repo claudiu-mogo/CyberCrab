@@ -79,7 +79,7 @@ const SignInModal = ({
               <LoadingDots color="#808080" />
             ) : (
               <>
-                <Google className="h-5 w-5" />
+                <img className="h-10 w-10" src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-512.png" alt="Google" />
                 <p>Sign In with Google</p>
               </>
             )}
