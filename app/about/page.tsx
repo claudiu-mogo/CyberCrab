@@ -1,11 +1,15 @@
-import React from 'react'
-import Nav from '@/components/layout/nav'
-import { Suspense } from "react"; 
-type Props = {}
+import React from "react";
+import Image from "next/image";
 
-export default function page({}: Props) {
+export default function page() {
   return (
-    <div>
-        </div>
-  )
+    <div className="z-20 h-full w-full flex items-center justify-center">
+      <Image
+        src="/about.png"
+        alt="Picture of the author"
+        width={1000}
+        height={1000}
+      ></Image>
+    </div>
+  );
 }
