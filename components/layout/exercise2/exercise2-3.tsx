@@ -1,6 +1,8 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { getGlobalVariable, setGlobalVariable } from '../globals';
 
 export default function Exercise23() {
   return (
@@ -17,6 +19,9 @@ export default function Exercise23() {
       <Link
         className="nav-link cursor-pointer rounded-lg bg-sky-950 p-2 text-xl font-semibold text-white transition-all duration-300 hover:scale-105 hover:bg-white hover:text-sky-950"
         href="/"
+        onClick={() => {
+          setGlobalVariable(getGlobalVariable() + 25);
+        }}
       >
         Finalizează lecția
       </Link>
