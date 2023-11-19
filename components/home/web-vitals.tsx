@@ -2,10 +2,12 @@
 
 import { motion } from "framer-motion";
 import CountingNumbers from "@/components/shared/counting-numbers";
-import React, { useState } from 'react';
+import React, { useState } from "react";
+import { getGlobalVariable, setGlobalVariable } from "../layout/globals";
 
-export default function WebVitals() {
-  const [value, setValue] = useState(5);
+export default function WebVitals({}) {
+  const currentValue = getGlobalVariable();
+
   return (
     <div className="relative h-full w-full">
       <motion.svg
@@ -32,7 +34,7 @@ export default function WebVitals() {
         />
       </motion.svg>
       <CountingNumbers
-        value={80}
+        value={getGlobalVariable()}
         duration={2500}
         className="absolute inset-0 mx-auto flex items-center justify-center font-display text-5xl text-green-500"
       />

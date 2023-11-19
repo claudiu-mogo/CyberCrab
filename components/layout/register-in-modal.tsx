@@ -6,6 +6,7 @@ import {
   SetStateAction,
   useCallback,
   useMemo,
+  useRef,
 } from "react";
 import { LoadingDots, Google } from "@/components/shared/icons";
 import Image from "next/image";
@@ -19,7 +20,43 @@ const RegisterModal = ({
   setShowRegisterModal: Dispatch<SetStateAction<boolean>>;
 }) => {
     const [registerClicked, setRegisterClicked] = useState(false);
+    const form = useRef<HTMLFormElement>(null);
 
+    const sendForm = async (event: React.FormEvent<HTMLFormElement>) => {
+      event.preventDefault();
+    
+      const formData = new FormData(form.current!);
+    
+      // Access form data
+      const userName = formData.get("user_name")?.toString();
+      const email = formData.get("email")?.toString();
+    
+      try {
+        const response = await fetch('/api/register', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ user_name: userName, email }),
+        });
+        console.log(response.body)
+        if (response.ok) {
+          const data = await response.json();
+          console.log("New User:", data.user);
+    
+          // Use next-auth to authenticate the user
+          // Use next-auth to create a session for the user
+          // Redirect the user to the home page
+    
+          event.currentTarget.reset();
+        } else {
+          console.error("Error creating user:", response.statusText);
+        }
+      } catch (error) {
+        // Handle any network errors
+        console.error("Network error:", error);
+      }
+    };
 
   return (
     <Modal showModal={showRegisterModal} setShowModal={setShowRegisterModal}>
@@ -37,6 +74,7 @@ const RegisterModal = ({
           <h3 className="font-display text-2xl font-bold">Register</h3>
           <p className="text-sm text-gray-500"></p>
         </div>
+        <form ref={form} onSubmit={sendForm}>
         <div className="m-auto flex flex-col items-center justify-center p-4">
           <div className="my-auto p-4">
             <input
@@ -79,6 +117,7 @@ const RegisterModal = ({
             Submit
           </button>
         </div>
+        </form>
         <div className="flex flex-col items-center justify-center space-y-4 bg-gray-50 px-4 py-8 md:px-16">
           <h3 className="font-display text-2xl font-bold">Or</h3>
           <button
