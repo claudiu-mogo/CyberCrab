@@ -11,7 +11,7 @@ export default function Exercise23() {
 
       <p className="mb-4 p-4 text-white text-center">
         Acum se poate auzi destul de clar mesajul.
-        Ai reușit astfel să salvezi mineriul blocat, aflând conținutul înregistrării.
+        Ai reușit astfel să salvezi minerul blocat, aflând conținutul înregistrării.
 	Felicitări, ai parcurs cu succes încă un ghid CyberCrab.
       </p>
       <Link
