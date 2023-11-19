@@ -21,7 +21,7 @@ export default function Exercise22() {
       <p className="mb-4 p-4 text-white text-center">
         Dupa cum ne asteptam, audio-ul este distorsionat, iar abordarea principala pentru a recrea macar partial fisierul original
         este sa schimbam elementele de baza ale unui semnal continuu: frecventa, amplitudinea, shiftarea.
-        Pentru ca fisierul este in formatul .wav, putem utiliza biblioteca scipy din python pentru a schimba usor datele semnalului.
+        Pentru ca fisierul este in formatul .wav, putem utiliza biblioteca scipy din python pentru a schimba usor datele semnalului
       </p>
 
         <p className="mb-4 p-4 text-white text-center">
