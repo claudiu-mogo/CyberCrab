@@ -36,10 +36,10 @@ export default function Erou({ session }: { session: Session | null }) {
             CyberCrab
           </h5>
           <p
-            className="mt-6 block animate-fade-up text-center text-gray-500 opacity-0 [text-wrap:balance] md:text-xl"
+            className="mt-6 block animate-fade-up text-center text-gray-200 opacity-0 [text-wrap:balance] md:text-xl"
             style={{ animationDelay: "0.25s", animationFillMode: "forwards" }}
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+            Protecting crabs, securing computers
           </p>
         <div
           className="mx-auto mt-6 flex animate-fade-up items-center justify-center space-x-5 opacity-0"

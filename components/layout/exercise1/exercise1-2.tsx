@@ -9,13 +9,13 @@ export default function Exercise12() {
         Osint pentru imagini - context cu poza si geografie
       </h1>
 
-      <p className="mb-4 p-4 text-white">
+      <p className="mb-4 p-4 text-white text-center">
         Până să îți pot răspunde la întrebare trebuie să analizăm datele
         problemei: O poză cu formatul .png Conținutul acesteia (o poză cu doi
         cai și un peisaj superb)
       </p>
 
-      <p className="mb-4 p-4 text-white">
+      <p className="mb-4 p-4 text-white text-center">
         Prietenul tău probabil s-a folosit de a doua informație, dar noi ne vom
         folosi de prima. Fișierele de tip imagine au de cele mai multe ori
         informații legate de acestea salvate înăuntrul lor. Aceste informații se
@@ -29,8 +29,8 @@ export default function Exercise12() {
         className="mb-4 "
         src="/steppe2.jpeg"
         alt="poza cu o tara"
-        width={400}
-        height={300}
+        width={700}
+        height={500}
       ></Image>
 
       <Link
