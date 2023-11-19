@@ -8,7 +8,7 @@ export default function Exercise11() {
         Osint pentru imagini - context cu poza si geografie
       </h1>
 
-      <p className="mb-4 text-white p-4">
+      <p className="mb-4 text-white p-4 text-center">
         Salutare și bine ai venit la primul tău laborator de securitate
         cibernetică de pe platforma CyberCrab! Astăzi vei învăța de ce este
         securitate importantă, printr-un exercițiu care arată cât de ușor este
@@ -22,14 +22,14 @@ export default function Exercise11() {
         width={400}
         height={300}
       ></Image>
-      <p className="mb-4 text-white p-4">
+      <p className="mb-4 text-white p-4 text-center">
         Cel mai probabil răspuns pe care îl vei primi, va fi Mongolia, un
         răspuns greșit. Tu ca viitor expert în securitate, nu doar că vei putea
         să identifici țara în care s-a făcut poza, ci vei afla coordonatele
         exacte ale acesteia.
       </p>
 
-      <p className="mb-4 text-white p-4">Te întrebi cum? Mergi la următorul pas.</p>
+      <p className="mb-4 text-white p-4 text-center">Te întrebi cum? Mergi la următorul pas.</p>
       <Link
         className="nav-link cursor-pointer bg-sky-950 rounded-lg p-2 text-xl font-semibold text-white transition-all duration-300 hover:scale-105 hover:bg-white hover:text-sky-950"
         href= "/exercise-1/2">
