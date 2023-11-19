@@ -6,7 +6,6 @@ import ComponentGrid from "@/components/home/component-grid";
 import Image from "next/image";
 import Link from "next/link";
 
-
 export default async function Home() {
   const { stargazers_count: stars } = await fetch(
     "https://api.github.com/repos/steven-tey/precedent",
@@ -25,8 +24,7 @@ export default async function Home() {
     .catch((e) => console.log(e));
   return (
     <>
-      <div className="z-10 w-full max-w-xl px-5 xl:px-0">
-      </div>
+      <div className="z-10 w-full max-w-xl px-5 xl:px-0"></div>
       <div className="my-10 grid w-full max-w-screen-xl animate-fade-up grid-cols-1 gap-5 px-5 md:grid-cols-3 xl:px-0">
         {features.map(({ title, description, demo, large }) => (
           <Card
@@ -48,87 +46,102 @@ export default async function Home() {
   );
 }
 
-
-let xp = 100
+let xp = 100;
 const isSpecial = xp > 10;
 const features = [
   {
-
     title: " ",
-    description: "BattlePass",
+    description: "CrabPass",
     demo: (
-      <div className="overflow-x-auto">
-        <div className="grid grid-flow-col grid-rows-2 gap-5 p-5 whitespace-nowrap">
-          <div className={isSpecial ? "square_pass_unlocked" : "square_pass_locked"}>
-            <img
-              src="claw.png"
-              className="w-full h-full object-cover"
-            />
+        <div className="overflow-x-auto">
+          <div className="grid grid-flow-col grid-rows-2 gap-5 whitespace-nowrap p-5">
+            <div
+              className={
+                isSpecial ? "square_pass_unlocked" : "square_pass_locked"
+              }
+            >
+              <img src="claw.png" className="h-full w-full object-cover" />
+            </div>
+            <div
+              className={
+                isSpecial ? "square_pass_unlocked" : "square_pass_locked"
+              }
+            >
+              <img src="crab_mic.png" className="h-full w-full object-cover" />
+            </div>
+            <div
+              className={
+                isSpecial ? "square_pass_unlocked" : "square_pass_locked"
+              }
+            >
+              <span
+                className="font-mono font-bold"
+                style={{
+                  textShadow: "0 0 5px #fff, 0 0 10px #00f, 0 0 20px #00f",
+                }}
+              >
+                Baby Crab
+              </span>
+            </div>
+            <div className="square_pass_unlocked">
+              <span
+                className="font-mono font-bold"
+                style={{
+                  textShadow:
+                    "0 0 5px #ffd700, 0 0 10px #ffd700, 0 0 20px #ffd700",
+                }}
+              >
+                Learner Crab
+              </span>
+            </div>
+            <div className="square_pass_unlocked">
+              <img
+                src="sticker1.png"
+                style={{ width: "100px", height: "75px" }}
+                className="h-full w-full object-cover"
+              />
+            </div>
+            <div className="square_pass_unlocked">
+              <img
+                src="sticker2.png"
+                style={{ width: "100px", height: "75px" }}
+                className="h-full w-full object-cover"
+              />
+            </div>
+            <div className="square_pass_locked">
+              <span className="font-mono font-semibold">Intermediate Lvl</span>
+            </div>
+            <div className="square_pass_locked">
+              <span className="font-mono font-semibold">Hard Lvl</span>
+            </div>
+            <div className="square_pass_locked">
+              <img
+                src="RL.png"
+                style={{ width: "100px", height: "75px" }}
+                className="h-full w-full object-cover"
+              />
+            </div>
+            <div className="square_pass_locked">
+              <img
+                src="SO.png"
+                style={{ width: "80px", height: "70px" }}
+                className="h-full w-full object-cover"
+              />
+            </div>
+            <div className="square_pass_locked">
+              <span className="font-mono font-semibold">Hard Lvl</span>
+            </div>
+            <div className="square_pass_locked">
+              <span className="font-mono font-semibold">50% Next Season</span>
+            </div>
           </div>
-          <div className={isSpecial ? "square_pass_unlocked" : "square_pass_locked"}>
-            <img
-              src="crab_mic.png"
-              className="w-full h-full object-cover"
-            />
-          </div>
-          <div className={isSpecial ? "square_pass_unlocked" : "square_pass_locked"}>
-            <span className="font-mono font-bold" style={{ textShadow: "0 0 5px #fff, 0 0 10px #00f, 0 0 20px #00f" }}>
-            Baby Crab</span>
-          </div>
-          <div className="square_pass_unlocked">
-            <span className="font-mono font-bold" style={{ textShadow: "0 0 5px #ffd700, 0 0 10px #ffd700, 0 0 20px #ffd700" }}>
-            Learner Crab</span>
-          </div>
-          <div className="square_pass_unlocked">
-            <img
-              src="sticker1.png"
-              style={{ width: '100px', height: '75px' }}
-              className="w-full h-full object-cover"
-            />
-          </div>
-          <div className="square_pass_unlocked">
-            <img
-              src="sticker2.png"
-              style={{ width: '100px', height: '75px' }}
-              className="w-full h-full object-cover"
-            />
-          </div>
-          <div className="square_pass_locked">
-            <span className="font-mono font-semibold">Intermediate Lvl</span>
-          </div>
-          <div className="square_pass_locked">
-            <span className="font-mono font-semibold">Hard Lvl</span>
-          </div>
-          <div className="square_pass_locked">
-            <img
-              src="RL.png"
-              style={{ width: '100px', height: '75px' }}
-              className="w-full h-full object-cover"
-            />
-          </div>
-          <div className="square_pass_locked">
-            <img
-              src="SO.png"
-              style={{ width: '80px', height: '70px' }}
-              className="w-full h-full object-cover"
-            />
-          </div>
-          <div className="square_pass_locked">
-            <span className="font-mono font-semibold">Hard Lvl</span>
-          </div>
-          <div className="square_pass_locked">
-            <span className="font-mono font-semibold">50% Next Season</span>
-          </div>
-          
         </div>
-      </div>
     ),
     large: true,
   },
   {
     title: "Experience Points",
-    description:
-      "",
+    description: "",
     demo: <WebVitals />,
   },
   {
@@ -149,8 +162,7 @@ const features = [
   },
   {
     title: "Our CTF challenges",
-    description:
-      "Here are our 4 ctf challenges:",
+    description: "Here are our 4 ctf challenges:",
     demo: (
       <div>
         <div className="grid grid-flow-col grid-rows-2 gap-10 p-10">
@@ -168,22 +180,24 @@ const features = [
           </Link>
         </div>
       </div>
-  ),
+    ),
   },
   {
     title: "How we differentiate",
     description: "*crab clinking noise*",
     demo: (
       <div className="overflow-x-auto">
-        <div className="grid grid-flow-line grid-cols-1 gap-5 p-5 whitespace-nowrap flex justify-center">
+        <div className="grid-flow-line flex grid grid-cols-1 justify-center gap-5 whitespace-nowrap p-5">
           <span className="font-mono font-semibold">- Real-Life Scenarios</span>
           <span className="font-mono font-semibold">- Discussions Forums</span>
-          <span className="font-mono font-semibold">- Detailed Write-ups & Guides</span>
-          <span className="font-mono font-semibold">- Battle Pass with Crabs</span>
+          <span className="font-mono font-semibold">
+            - Detailed Write-ups & Guides
+          </span>
+          <span className="font-mono font-semibold">
+            - Battle Pass with Crabs
+          </span>
         </div>
       </div>
     ),
   },
 ];
-
-
