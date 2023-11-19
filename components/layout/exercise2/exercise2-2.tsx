@@ -43,7 +43,7 @@ export default function Exercise22() {
       <Image
         className="mb-4 "
         src="/euler.jpeg"
-        alt="poza cu frecventa"
+        alt="poza cu euler"
         width={400}
         height={200}
       ></Image>
