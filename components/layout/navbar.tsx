@@ -42,7 +42,7 @@ export default function NavBar({ session }: { session: Session | null }) {
                     href="/about"
                     className="nav-link cursor-pointer rounded-lg p-2 text-xl font-semibold text-white transition-all duration-300 hover:scale-105 hover:bg-white hover:text-sky-950"
                   >
-                    About me
+                    About us
                   </Link>
                 ) : (
                   <Link
