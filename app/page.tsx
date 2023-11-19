@@ -5,6 +5,7 @@ import WebVitals from "@/components/home/web-vitals";
 import ComponentGrid from "@/components/home/component-grid";
 import Image from "next/image";
 import Link from "next/link";
+import { getGlobalVariable } from "@/components/layout/globals";
 
 export default async function Home() {
   const { stargazers_count: stars } = await fetch(
@@ -46,32 +47,34 @@ export default async function Home() {
   );
 }
 
-let xp = 100;
-const isSpecial = xp > 10;
-const features = [
+let crit1 = getGlobalVariable() > 10;
+let crit2 = getGlobalVariable() > 30;
+let crit3 = getGlobalVariable() > 45;
+let crit4 = getGlobalVariable() > 60;
+let features = [
   {
-    title: " ",
+    title: "_________________________",
     description: "CrabPass",
     demo: (
         <div className="overflow-x-auto">
           <div className="grid grid-flow-col grid-rows-2 gap-5 whitespace-nowrap p-5">
             <div
               className={
-                isSpecial ? "square_pass_unlocked" : "square_pass_locked"
+                "square_pass_unlocked"
               }
             >
               <img src="claw.png" className="h-full w-full object-cover" />
             </div>
             <div
               className={
-                isSpecial ? "square_pass_unlocked" : "square_pass_locked"
+                "square_pass_unlocked"
               }
             >
               <img src="crab_mic.png" className="h-full w-full object-cover" />
             </div>
             <div
               className={
-                isSpecial ? "square_pass_unlocked" : "square_pass_locked"
+                "square_pass_unlocked"
               }
             >
               <span
@@ -83,7 +86,9 @@ const features = [
                 Baby Crab
               </span>
             </div>
-            <div className="square_pass_unlocked">
+            <div className={
+                "square_pass_unlocked"
+              }>
               <span
                 className="font-mono font-bold"
                 style={{
@@ -94,24 +99,32 @@ const features = [
                 Learner Crab
               </span>
             </div>
-            <div className="square_pass_unlocked">
+            <div className={
+                crit3 ? "square_pass_unlocked" : "square_pass_locked"
+              }>
               <img
                 src="sticker1.png"
                 style={{ width: "100px", height: "75px" }}
                 className="h-full w-full object-cover"
               />
             </div>
-            <div className="square_pass_unlocked">
+            <div className={
+                crit3 ? "square_pass_unlocked" : "square_pass_locked"
+              }>
               <img
                 src="sticker2.png"
                 style={{ width: "100px", height: "75px" }}
                 className="h-full w-full object-cover"
               />
             </div>
-            <div className="square_pass_locked">
+            <div className={
+                crit4 ? "square_pass_unlocked" : "square_pass_locked"
+              }>
               <span className="font-mono font-semibold">Intermediate Lvl</span>
             </div>
-            <div className="square_pass_locked">
+            <div className={
+                crit4 ? "square_pass_unlocked" : "square_pass_locked"
+              }>
               <span className="font-mono font-semibold">Hard Lvl</span>
             </div>
             <div className="square_pass_locked">
