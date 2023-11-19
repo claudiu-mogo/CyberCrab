@@ -13,7 +13,7 @@ export default function Exercise22() {
         Ai vorbit cu minerul de afară și ți-a pus la dispoziție ultima înregistrare pe care a primit-o de la cel dinăuntru înainte ca acesta să rămână fără baterie. Poți descifra conținutul acesteia?
       </p>
 
-      <Link href="https://we.tl/t-JXGS8WMFrm">
+      <Link href="https://drive.google.com/file/d/1Eowfm2SSP9Awu5Bpv8twDntWW-6KYMVu/view?usp=sharing">
         Download wav file
       </Link>
       

@@ -22,6 +22,9 @@ export default function Exercise11() {
         width={400}
         height={300}
       ></Image>
+      <Link href="https://drive.google.com/file/d/1kR2swSYNzPN1CUEB8d_tfa6z5f3zqx1S/view?usp=sharing">
+        Download image
+      </Link>
       <p className="mb-4 text-white p-4 text-center">
         Cel mai probabil răspuns pe care îl vei primi, va fi Mongolia, un
         răspuns greșit. Tu ca viitor expert în securitate, nu doar că vei putea
