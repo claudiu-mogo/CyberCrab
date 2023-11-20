@@ -1,28 +1,20 @@
-<script async defer src="https://buttons.github.io/buttons.js"></script>
 <a href="https://cybercrab.vercel.app/">
   <img alt="CyberCrab - Protecting crabs, securing computers" src="public/website.png">
-  <h1 align="center">CyberCrab</h1>
+  <h1 align="center">CyberCrab <img  height="25" width="25" src="public/logo.png"></h1>
+  
 </a>
 
 <p align="center">
   Protecting crabs, securing computers
 </p>
 
-<p align="center"
-  style="display: flex; justify-content: center;">
-  <a href="https://vercel.com/"
-  style="display: inline-block; background-color: white; color: black; border: 1px solid black; border-radius: 5px; padding: 2px 10px; font-size: 12px; font-weight: 600; margin-right: 10px;">
-      <img src="https://www.svgrepo.com/show/327408/logo-vercel.svg" height="8" alt="Vercel Logo"> 
-      Next.js
-  </a>
-  <a class="github-button" href="https://github.com/ReGeLePuMa/CyberCrab"
-    data-color-scheme="no-preference: light_high_contrast; light: light_high_contrast; dark: dark_high_contrast;" 
-    data-icon="octicon-star" 
-    data-size="large"
-    data-show-count="true" 
-    aria-label="Star buttons/github-buttons on GitHub"
-    style="background-color: white; color: black; border: 1px solid black; border-radius: 10px; padding: 10px 20px; font-size: 16px; font-weight: 600; ">
-    Star
+<p align="center">
+  <a href="https://vercel.com/">
+    <img src="public/next.png">
+</a>
+
+  <a href="https://github.com/ReGeLePuMa/CyberCrab">
+    <img src="public/star.png">
   </a>
 </p>
 
