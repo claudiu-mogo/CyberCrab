@@ -10,11 +10,13 @@
 
 <p align="center">
   <a href="https://vercel.com/">
-    <img src="public/next.png">
+    <img src="public/next.png"
+      height="50">
 </a>
 
   <a href="https://github.com/ReGeLePuMa/CyberCrab">
-    <img src="public/star.png">
+    <img src="public/star.png"
+     height="50">
   </a>
 </p>
 
@@ -102,4 +104,4 @@ vercel
 - Andrei Petrea - Project Manager & Frontend Developer ([@ReGeLePuMa](https://github.com/ReGeLePuMa))
 - Radu Manea - System Arhitect & Backend Developer ([@maxwell97](https://github.com/maxwell97))
 - Adelin-Costin Popa - DevOps & Presenter ([@AdoX13](https://github.com/AdoX13))
-- Claudio Mogodeanu - Frontend Developer & Challendge Creator ([@claudiu0mogo](https://github.com/claudiu-mogo))
+- Claudio Mogodeanu - Frontend Developer & Challendge Creator ([@claudiu-mogo](https://github.com/claudiu-mogo))
