@@ -1,69 +1,56 @@
-<script async defer src="https://buttons.github.io/buttons.js"></script>
-<a href="https://cybercrab.vercel.app/">
-  <img alt="CyberCrab - Protecting crabs, securing computers" src="public/website.png">
-  <h1 align="center">CyberCrab</h1>
+<a href="https://precedent.dev">
+  <img alt="Precedent – Building blocks for your Next project" src="https://precedent.dev/opengraph-image">
+  <h1 align="center">Precedent</h1>
 </a>
 
 <p align="center">
-  Protecting crabs, securing computers
+  Building blocks for your Next project
 </p>
 
-<p align="center"
-  style="display: flex; justify-content: center;">
-  <a href="https://vercel.com/"
-  style="display: inline-block; background-color: white; color: black; border: 1px solid black; border-radius: 5px; padding: 2px 10px; font-size: 12px; font-weight: 600; margin-right: 10px;">
-      <img src="https://www.svgrepo.com/show/327408/logo-vercel.svg" height="8" alt="Vercel Logo"> 
-      Next.js
+<p align="center">
+  <a href="https://twitter.com/steventey">
+    <img src="https://img.shields.io/twitter/follow/steventey?style=flat&label=steventey&logo=twitter&color=0bf&logoColor=fff" alt="Steven Tey Twitter follower count" />
   </a>
-  <a class="github-button" href="https://github.com/ReGeLePuMa/CyberCrab"
-    data-color-scheme="no-preference: light_high_contrast; light: light_high_contrast; dark: dark_high_contrast;" 
-    data-icon="octicon-star" 
-    data-size="large"
-    data-show-count="true" 
-    aria-label="Star buttons/github-buttons on GitHub"
-    style="background-color: white; color: black; border: 1px solid black; border-radius: 10px; padding: 10px 20px; font-size: 16px; font-weight: 600; ">
-    Star
+  <a href="https://github.com/steven-tey/precedent">
+    <img src="https://img.shields.io/github/stars/steven-tey/precedent?label=steven-tey%2Fprecedent" alt="Precedent repo star count" />
   </a>
 </p>
-
 
 <p align="center">
   <a href="#introduction"><strong>Introduction</strong></a> ·
-  <a href="#one-click-deploy"><strong>Installation</strong></a> ·
+  <a href="#one-click-deploy"><strong>One-click Deploy</strong></a> ·
   <a href="#tech-stack--features"><strong>Tech Stack + Features</strong></a> ·
-  <a href="#author"><strong>Authors</strong></a>
+  <a href="#author"><strong>Author</strong></a>
 </p>
 <br/>
 
 ## Introduction
 
-CyberCrab is an on-line platform for learning cyber security in a fun and interactive way.
+Precedent is an opinionated collection of components, hooks, and utilities for your Next.js project.
 
-## Installation
+## One-click Deploy
 
-Clone the repository:
+You can deploy this template to Vercel with the button below:
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fsteven-tey%2Fprecedent&project-name=precedent&repository-name=precedent&demo-title=Precedent&demo-description=An%20opinionated%20collection%20of%20components%2C%20hooks%2C%20and%20utilities%20for%20your%20Next%20project.&demo-url=https%3A%2F%2Fprecedent.dev&demo-image=https%3A%2F%2Fprecedent.dev%2Fopengraph-image&env=GOOGLE_CLIENT_ID,GOOGLE_CLIENT_SECRET,NEXTAUTH_SECRET&envDescription=How%20to%20get%20these%20env%20variables%3A&envLink=https%3A%2F%2Fgithub.com%2Fsteven-tey%2Fprecedent%2Fblob%2Fmain%2F.env.example&stores=%5B%7B"type"%3A"postgres"%7D%5D)
+
+You can also clone & create this repo locally with the following command:
 
 ```bash
-git clone https://github.com/ReGeLePuMa/CyberCrab
+npx create-next-app precedent --example "https://github.com/steven-tey/precedent"
 ```
 
 Then, install the dependencies with your package manager of choice:
 
 ```bash
-cd CyberCrab
 npm i
 yarn
 pnpm i
 ```
 
-Optionally, you can deploy the app to Vercel with one click:
-
-```bash
-npm install -g vercel
-vercel
-```
-
 ## Tech Stack + Features
+
+https://user-images.githubusercontent.com/28986134/212368288-12f41e37-aa8c-4e0a-a542-cf6d23410a65.mp4
 
 ### Frameworks
 
@@ -105,9 +92,6 @@ vercel
 
 - [Vercel Analytics](https://vercel.com/analytics) – Track unique visitors, pageviews, and more in a privacy-friendly way
 
-## Authors
+## Author
 
-- Andrei Petrea - Project Manager & Frontend Developer ([@ReGeLePuMa](https://github.com/ReGeLePuMa))
-- Radu Manea - System Arhitect & Backend Developer ([@maxwell97](https://github.com/maxwell97))
-- Adelin-Costin Popa - DevOps & Presenter ([@AdoX13](https://github.com/AdoX13))
-- Claudio Mogodeanu - Frontend Developer & Challendge Creator ([@claudiu0mogo](https://github.com/claudiu-mogo))
+- Steven Tey ([@steventey](https://twitter.com/steventey))
