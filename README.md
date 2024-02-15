@@ -102,6 +102,6 @@ vercel
 ## Authors
 
 - Andrei Petrea - Project Manager & Frontend Developer ([@ReGeLePuMa](https://github.com/ReGeLePuMa))
-- Radu Manea - System Arhitect & Backend Developer ([@maxwell97](https://github.com/maxwell97))
+- Radu Manea - System Architect & Backend Developer ([@maxwell97](https://github.com/maxwell97))
 - Adelin-Costin Popa - DevOps & Presenter ([@AdoX13](https://github.com/AdoX13))
 - Claudiu Mogodeanu - Frontend Developer & Challenge Creator ([@claudiu-mogo](https://github.com/claudiu-mogo))
